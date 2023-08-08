@@ -8,19 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		035001802A817C1200E3F560 /* SwiftUISamplesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0350017F2A817C1200E3F560 /* SwiftUISamplesApp.swift */; };
-		035001822A817C1200E3F560 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035001812A817C1200E3F560 /* ContentView.swift */; };
+		035001822A817C1200E3F560 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035001812A817C1200E3F560 /* MainScreen.swift */; };
 		035001842A817C1300E3F560 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 035001832A817C1300E3F560 /* Assets.xcassets */; };
 		035001872A817C1300E3F560 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 035001862A817C1300E3F560 /* Preview Assets.xcassets */; };
 		0350018E2A81858100E3F560 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0350018D2A81858100E3F560 /* ColorExtension.swift */; };
+		035001912A82588300E3F560 /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035001902A82588300E3F560 /* CustomColors.swift */; };
+		035001942A82673B00E3F560 /* BlinkingTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035001932A82673B00E3F560 /* BlinkingTextButton.swift */; };
+		035001982A82748700E3F560 /* BirdAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035001972A82748700E3F560 /* BirdAnimation.swift */; };
+		0350019A2A8275AC00E3F560 /* SecondScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035001992A8275AC00E3F560 /* SecondScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0350017C2A817C1200E3F560 /* SwiftUISamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUISamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0350017F2A817C1200E3F560 /* SwiftUISamplesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUISamplesApp.swift; sourceTree = "<group>"; };
-		035001812A817C1200E3F560 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		035001812A817C1200E3F560 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 		035001832A817C1300E3F560 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		035001862A817C1300E3F560 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0350018D2A81858100E3F560 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		035001902A82588300E3F560 /* CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
+		035001932A82673B00E3F560 /* BlinkingTextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlinkingTextButton.swift; sourceTree = "<group>"; };
+		035001972A82748700E3F560 /* BirdAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdAnimation.swift; sourceTree = "<group>"; };
+		035001992A8275AC00E3F560 /* SecondScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +62,10 @@
 			isa = PBXGroup;
 			children = (
 				0350017F2A817C1200E3F560 /* SwiftUISamplesApp.swift */,
-				035001812A817C1200E3F560 /* ContentView.swift */,
-				0350018D2A81858100E3F560 /* ColorExtension.swift */,
+				035001812A817C1200E3F560 /* MainScreen.swift */,
+				035001992A8275AC00E3F560 /* SecondScreen.swift */,
+				035001922A82672900E3F560 /* Animation */,
+				0350018F2A82587500E3F560 /* Colors */,
 				035001832A817C1300E3F560 /* Assets.xcassets */,
 				035001852A817C1300E3F560 /* Preview Content */,
 			);
@@ -68,6 +78,24 @@
 				035001862A817C1300E3F560 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0350018F2A82587500E3F560 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				0350018D2A81858100E3F560 /* ColorExtension.swift */,
+				035001902A82588300E3F560 /* CustomColors.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		035001922A82672900E3F560 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				035001932A82673B00E3F560 /* BlinkingTextButton.swift */,
+				035001972A82748700E3F560 /* BirdAnimation.swift */,
+			);
+			path = Animation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,7 +169,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0350018E2A81858100E3F560 /* ColorExtension.swift in Sources */,
-				035001822A817C1200E3F560 /* ContentView.swift in Sources */,
+				035001912A82588300E3F560 /* CustomColors.swift in Sources */,
+				0350019A2A8275AC00E3F560 /* SecondScreen.swift in Sources */,
+				035001822A817C1200E3F560 /* MainScreen.swift in Sources */,
+				035001982A82748700E3F560 /* BirdAnimation.swift in Sources */,
+				035001942A82673B00E3F560 /* BlinkingTextButton.swift in Sources */,
 				035001802A817C1200E3F560 /* SwiftUISamplesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
